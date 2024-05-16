@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            text-align: center;
+            color: rgb(51, 136, 153);
+            width: 500px;
+            height: 500px;
+            position: absolute;
+           
+        }
+
+        button {
+            width: 70px;
+            height: 50px;
+            color: rgb(153, 51, 136);
+            background-color: rgb(22, 178, 193);
+            animation-name: myo;
+            animation-duration: 5s;
+            position: absolute;
+            animation-timing-function: ease;
+            
+        }
+
+        @keyframes myo {
+            0% {
+                background-color: red;
+              top: 0;left: 0;
+            }
+
+            25% {
+                background-color: #848497;
+                top: 0;left: 100%;
+                
+
+            }
+            50%{
+                background-color: #2222b5;
+                top: 100%;left:100% ;
+                
+            }
+
+            75% {
+                background-color: hwb(330 2% 96%);
+                top: 100%;left:0% ;
+               
+            }
+
+            100% {
+                background-color: #0400ff;
+                top: 0%;left:0% ;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button>Animation</button>
+    </div>
+
+</body>
+
+</html>
